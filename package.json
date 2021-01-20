@@ -1,0 +1,19 @@
+{
+  "name": "imapper",
+  "version": "0.1.0",
+  "description": "IMAP message sweeper",
+  "main": "dist/main.js",
+  "scripts": {
+    "test": "spago test",
+    "build": "spago bundle-app"
+  },
+  "portfolio": {
+    "project_type": "Published on npm",
+    "languages": ["Purescript"],
+    "frameworks": [],
+    "paradigms": [
+      "Functional programming"
+    ],
+    "status": ["In development"]
+  }
+}
