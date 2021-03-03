@@ -1,6 +1,6 @@
 {
   "name": "imapper",
-  "description": "IMAP message sweeper",
+  "description": "IMAP message sweeper.",
   "version": "0.1.0",
   "license": "MIT",
   "author": "Joel Lefkowitz",

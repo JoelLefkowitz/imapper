@@ -1,6 +1,6 @@
 # Imapper
 
-IMAP message sweeper
+IMAP message sweeper.
 
 ## Status
 
