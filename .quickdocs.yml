@@ -1,0 +1,6 @@
+project: immaper
+version: 0.1.0
+author: Joel Lefkowitz
+verbose_name: Immaper
+html_title: Immaper 
+github_url: https://github.com/JoelLefkowitz/immaper
