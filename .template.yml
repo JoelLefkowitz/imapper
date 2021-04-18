@@ -1,0 +1,44 @@
+output_dir: .
+
+clear_top_level: true
+logical_grouping: true
+
+collections:
+  - common
+  - purescript
+
+loader_paths:
+  - docs
+
+render_context:
+  project:
+    project_name: immaper
+    version: 0.1.0
+
+    verbose_name: Immaper
+    description: IMAP client.
+
+    repository: https://github.com/JoelLefkowitz/immaper
+    codacy_id: 9f1c7f28a7004a4ba4c1b62ea4f23a41
+
+    inserts:
+      - usage.md
+
+  author:
+    author: Joel Lefkowitz
+    author_email: joellefkowitz@hotmail.com
+    author_github_handle: joellefkowitz
+
+  package:
+    is_npm_package: true
+    package_name: immaper
+
+  portfolio:
+    is_portfolio: true
+    status_level: 1
+
+    languages:
+      - PureScript
+
+    paradigms:
+      - Functional programming
