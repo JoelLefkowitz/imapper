@@ -1,4 +1,8 @@
 __pypackages__/
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/settings.json
+!.vscode/tasks.json
 .c9/
 .cache
 .classpath
@@ -23,6 +27,7 @@ __pypackages__/
 .sass-cache/
 .scrapy
 .settings/
+.spago/
 .spyderproject
 .spyproject
 .test_report.*
@@ -33,6 +38,7 @@ __pypackages__/
 *.cover
 *.egg
 *.egg-info/
+*.env
 *.env
 *.launch
 *.log
@@ -65,7 +71,9 @@ dmypy.json
 docs/_build/
 downloads/
 eggs/
+env.bak/
 env/
+ENV/
 htmlcov/
 instance/
 ipython_config.py
@@ -77,6 +85,7 @@ node_modules/
 nosetests.xml
 npm-debug.log
 out-tsc/
+output/
 parts/
 pip-delete-this-directory.txt
 pip-log.txt
@@ -98,6 +107,3 @@ venv.bak/
 venv/
 wheels/
 yarn-error.log
-
-# Exclusions must succeed inclusions
-!public.*.env

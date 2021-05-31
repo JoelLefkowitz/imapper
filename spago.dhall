@@ -1,4 +1,4 @@
-{ name = "immaper"
+{ name = "imap"
 , dependencies =
   [ "assert"
   , "console"
@@ -10,5 +10,5 @@
   , "stringutils"
   ]
 , packages = ./packages.dhall
-, sources = [ "src/**/*.purs" ]
+, sources = [ "src/**/*.purs", "test/**/*.purs" ]
 }

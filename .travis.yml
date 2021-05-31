@@ -5,16 +5,16 @@ dist: xenial
 node_js: 14.8.0
 
 before_install:
-  - npm install
-  - npm install -g grunt-cli
+    - npm install
+    - npm install -g grunt-cli
 
 cache:
-  - npm
+    - npm
 
 jobs:
-  include:
-    - stage: Linters
-      script: grunt lint
+    include:
+        - stage: Linters
+          script: grunt lint
 
-    - stage: Unit tests
-      script: grunt tests:unit
+        - stage: Unit tests
+          script: grunt tests:unit

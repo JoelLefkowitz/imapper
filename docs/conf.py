@@ -8,7 +8,7 @@ sys.path.append("..")
 """
     Sphinx core settings
 """
-project = "immaper"
+project = "purescript-imap"
 version = "0.1.0"
 author = "Joel Lefkowitz"
 master_doc = "index"
@@ -21,7 +21,7 @@ extensions = [
     "sphinxcontrib.apidoc",
 ]
 
-html_title = "Immaper"
+html_title = "PureScript IMAP"
 html_favicon = "static/favicon.ico"
 
 html_static_path = ["static"]
@@ -47,7 +47,7 @@ napoleon_google_docstring = True
 html_theme = "yummy_sphinx_theme"
 html_theme_options = {
     "navbar_icon": "spin fa-book",
-    "github_url": "https://github.com/JoelLefkowitz/immaper"
+    "github_url": "https://github.com/JoelLefkowitz/purescript-imap"
 }
 
 """

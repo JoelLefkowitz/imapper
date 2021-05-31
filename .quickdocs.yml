@@ -1,6 +1,6 @@
-project: immaper
+project: purescript-imap
 version: 0.1.0
 author: Joel Lefkowitz
-verbose_name: Immaper
-html_title: Immaper 
-github_url: https://github.com/JoelLefkowitz/immaper
+verbose_name: PureScript IMAP
+html_title: PureScript IMAP
+github_url: https://github.com/JoelLefkowitz/purescript-imap

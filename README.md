@@ -1,21 +1,20 @@
-# Immaper
+# PureScript IMAP
 
-IMAP client.
+PurseScript IMAP client.
 
 ## Status
 
 | Source     | Shields                                                                                                                         |
 | ---------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| Project    | ![release][release_shield] ![license][license_shield]  ![lines][lines_shield] ![languages][languages_shield]                    |
+| Project    | ![release][release_shield] ![license][license_shield] ![lines][lines_shield] ![languages][languages_shield]                     |
 | Health     | ![codacy][codacy_shield] ![readthedocs][readthedocs_shield] ![travis][travis_shield] ![codacy_coverage][codacy_coverage_shield] |
 | Repository | ![issues][issues_shield] ![issues_closed][issues_closed_shield] ![pulls][pulls_shield] ![pulls_closed][pulls_closed_shield]     |
-| Publishers | ![npm][npm_shield] ![npm_downloads][npm_downloads_shield]                                                                       |
 | Activity   | ![contributors][contributors_shield] ![monthly_commits][monthly_commits_shield] ![last_commit][last_commit_shield]              |
 
 ## Installing
 
 ```bash
-npm install immaper
+spago install imap
 ```
 
 ## Usage
@@ -92,7 +91,7 @@ Please read this repository's guidelines on [CONTRIBUTING](CONTRIBUTING.md) for 
 
 ## Contributors
 
-- **Joel Lefkowitz** - _Initial work_ - [Joel Lefkowitz][author]
+-   **Joel Lefkowitz** - _Initial work_ - [Joel Lefkowitz][author]
 
 [![Buy Me A Coffee][coffee_button]][coffee]
 
@@ -103,40 +102,43 @@ Lots of love to the open source community!
 ![Be kind][be_kind]
 
 <!-- Public links -->
+
 [semver]: http://semver.org/
 
 <!-- External links -->
-[readthedocs]: https://immaper.readthedocs.io/en/latest/
+
+[readthedocs]: https://purescript-imap.readthedocs.io/en/latest/
 [coffee]: https://www.buymeacoffee.com/joellefkowitz
 [coffee_button]: https://cdn.buymeacoffee.com/buttons/default-blue.png
 [be_kind]: https://media.giphy.com/media/osAcIGTSyeovPq6Xph/giphy.gif
 
 <!-- Acknowledgments -->
+
 [author]: https://github.com/joellefkowitz
 
 <!-- Project shields -->
-[release_shield]: https://img.shields.io/github/v/tag/joellefkowitz/immaper
-[license_shield]: https://img.shields.io/github/license/joellefkowitz/immaper
-[lines_shield]: https://img.shields.io/tokei/lines/github/joellefkowitz/immaper
-[languages_shield]: https://img.shields.io/github/languages/count/joellefkowitz/immaper
+
+[release_shield]: https://img.shields.io/github/v/tag/joellefkowitz/purescript-imap
+[license_shield]: https://img.shields.io/github/license/joellefkowitz/purescript-imap
+[lines_shield]: https://img.shields.io/tokei/lines/github/joellefkowitz/purescript-imap
+[languages_shield]: https://img.shields.io/github/languages/count/joellefkowitz/purescript-imap
 
 <!-- Health shields -->
-[codacy_shield]: https://img.shields.io/codacy/grade/9f1c7f28a7004a4ba4c1b62ea4f23a41
-[readthedocs_shield]: https://img.shields.io/readthedocs/immaper
-[travis_shield]: https://img.shields.io/travis/com/joellefkowitz/immaper
-[codacy_coverage_shield]: https://img.shields.io/codacy/coverage/9f1c7f28a7004a4ba4c1b62ea4f23a41
+
+[codacy_shield]: https://img.shields.io/codacy/grade/e27efe837eba41e7ac5ab57823925689
+[readthedocs_shield]: https://img.shields.io/readthedocs/purescript-imap
+[travis_shield]: https://img.shields.io/travis/com/joellefkowitz/purescript-imap
+[codacy_coverage_shield]: https://img.shields.io/codacy/coverage/e27efe837eba41e7ac5ab57823925689
 
 <!-- Repository shields -->
-[issues_shield]: https://img.shields.io/github/issues/joellefkowitz/immaper
-[issues_closed_shield]: https://img.shields.io/github/issues-closed/joellefkowitz/immaper
-[pulls_shield]: https://img.shields.io/github/issues-pr/joellefkowitz/immaper
-[pulls_closed_shield]: https://img.shields.io/github/issues-pr-closed/joellefkowitz/immaper
 
-<!-- Publishers shields -->
-[npm_shield]: https://img.shields.io/npm/v/immaper
-[npm_downloads_shield]: https://img.shields.io/npm/dw/immaper
+[issues_shield]: https://img.shields.io/github/issues/joellefkowitz/purescript-imap
+[issues_closed_shield]: https://img.shields.io/github/issues-closed/joellefkowitz/purescript-imap
+[pulls_shield]: https://img.shields.io/github/issues-pr/joellefkowitz/purescript-imap
+[pulls_closed_shield]: https://img.shields.io/github/issues-pr-closed/joellefkowitz/purescript-imap
 
 <!-- Activity shields -->
-[contributors_shield]: https://img.shields.io/github/contributors/joellefkowitz/immaper
-[monthly_commits_shield]: https://img.shields.io/github/commit-activity/m/joellefkowitz/immaper
-[last_commit_shield]: https://img.shields.io/github/last-commit/joellefkowitz/immaper
+
+[contributors_shield]: https://img.shields.io/github/contributors/joellefkowitz/purescript-imap
+[monthly_commits_shield]: https://img.shields.io/github/commit-activity/m/joellefkowitz/purescript-imap
+[last_commit_shield]: https://img.shields.io/github/last-commit/joellefkowitz/purescript-imap

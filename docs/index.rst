@@ -1,7 +1,7 @@
-Immaper
+PureScript IMAP
 ============
 
-Welcome to Immaper's documentation!
+Welcome to PureScript IMAP's documentation!
 
 .. raw:: html
    :file: README.html
