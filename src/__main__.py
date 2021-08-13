@@ -29,8 +29,6 @@ cli = cleandoc(
 def main() -> None:
     args = docopt(cli)
 
-    print(args)
-
     if args["--log"]:
         logfile = args["--log"]
     else:
