@@ -1,0 +1,3 @@
+# Imapper
+
+IMAP message sweeper.
