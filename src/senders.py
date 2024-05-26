@@ -1,13 +1,10 @@
 import logging
-from imaplib import IMAP4
-from typing import Dict, List
-
-# pylint: disable=E0401
-from imap_tools import U
-
 from .models import Client
 from .session import sessions
 from .utils import increment_dict, intervals
+from imap_tools import U
+from imaplib import IMAP4
+from typing import Dict, List
 
 logger = logging.getLogger(__name__)
 
@@ -23,7 +20,7 @@ def fetch_senders(clients: List[Client]) -> None:
                 senders = {}  # type: Dict[str, int]
 
                 for (start, end) in intervals(1, BATCH_LIMIT, BATCH_COUNT):
-                    ids = U(start, end)
+                    ids = U(str(start), str(end))
                     logger.info("Fetching messages with uid in range: %s", ids)
 
                     matches = mailbox.fetch(

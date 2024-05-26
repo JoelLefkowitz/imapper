@@ -1,6 +1,5 @@
-from typing import Any, List
-
 from .models import Client, Folder
+from typing import Any, List
 
 
 def parse_clients(clients_json: List[Any]) -> List[Client]:

@@ -1,6 +1,5 @@
 from typing import Any, Dict, Iterator, List, Tuple, TypeVar, Union
 
-# pylint: disable=C0103
 T = TypeVar("T")
 
 
@@ -24,8 +23,8 @@ def flatten(lst: Union[List[Any], Tuple[Any]]) -> List[Any]:
     return list(lst[:1]) + flatten(list(lst[1:]))
 
 
-def show_lst(lst: List[str], delimeter: str = ", ") -> str:
-    return "".join(["[", delimeter.join(lst), "]"])
+def show_lst(lst: List[str], delimiter: str = ", ") -> str:
+    return "".join(["[", delimiter.join(lst), "]"])
 
 
 def increment_dict(dct: Dict[T, int], k: T) -> None:

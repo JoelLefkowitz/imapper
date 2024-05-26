@@ -2,15 +2,12 @@ import itertools
 import logging
 import sched
 import time
-from imaplib import IMAP4
-from typing import List
-
-# pylint: disable=E0401
-from imap_tools import AND, OR, MailBox
-
 from .models import Client, Folder, FolderStats
 from .session import sessions
 from .utils import chunks, flatten, show_lst
+from imap_tools import AND, OR, MailBox
+from imaplib import IMAP4
+from typing import Any, List
 
 REPEAT_DELAY = 60 * 5
 BATCH_LIMIT = 100
@@ -41,7 +38,7 @@ def launch_sweep(scheduler: sched.scheduler, clients: List[Client]) -> None:
 def sweep_client(client: Client, mailbox: MailBox):
     before_stats = gather_stats(mailbox)
 
-    for (source_folder, target_folder) in itertools.permutations(client.folders, 2):
+    for source_folder, target_folder in itertools.permutations(client.folders, 2):
         for pattern_set in chunks(target_folder.patterns, PATTERN_LENGTH_LIMIT):
             logger.info(
                 "Attempting to move matching messages from %s to %s:",
@@ -83,13 +80,14 @@ def move_mail(
         logger.info("Creating folder %s", target_folder.name)
         mailbox.folder.create(target_folder.name)
 
-    move_results = mailbox.move(matches, target_folder.name)
+    move_results = mailbox.move(
+        [i.text() for i in matches], target_folder.name
+    )  # type: Any
 
     if move_results:
-        ids = filter(
-            lambda i: i is not None and i != "OK",
-            flatten(move_results),
-        )
+        flat = flatten(move_results)
+        ids = filter(lambda i: i is not None and i != "OK", flat)
+
         logger.info(
             "Moved %d message(s) from %s to %s.",
             len(list(ids)),

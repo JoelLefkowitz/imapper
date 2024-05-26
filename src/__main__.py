@@ -1,15 +1,14 @@
-import os
+#!/usr/bin/env python
 import json
 import logging
-from pathlib import Path
-from inspect import cleandoc
-from logging.handlers import TimedRotatingFileHandler
-
-from docopt import docopt
-
+import os
 from .parsers import parse_clients
 from .senders import fetch_senders
 from .sweeper import sweep_on_loop
+from docopt import docopt
+from inspect import cleandoc
+from logging.handlers import TimedRotatingFileHandler
+from pathlib import Path
 
 logger = logging.getLogger()
 
@@ -43,7 +42,7 @@ def main() -> None:
         handlers=[TimedRotatingFileHandler(logfile, "h", 1)],
     )
 
-    with open(args["PATH"]) as stream:
+    with open(args["PATH"], "r", encoding="utf8") as stream:
         clients = parse_clients(json.load(stream))
 
     if args["sweep"]:

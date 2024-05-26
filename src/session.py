@@ -1,18 +1,15 @@
 import logging
-from imaplib import IMAP4
-from typing import Iterator, List, Tuple
-
-# pylint: disable=E0401
-from imap_tools import MailBox
-from safe_environ import MissingEnvVar, from_env
-
 from .models import Client
 from .utils import normcase_email
+from imap_tools import BaseMailBox, MailBox
+from imaplib import IMAP4
+from safe_environ import MissingEnvVar, from_env
+from typing import Iterator, List, Tuple
 
 logger = logging.getLogger(__name__)
 
 
-def sessions(clients: List[Client]) -> Iterator[Tuple[Client, MailBox]]:
+def sessions(clients: List[Client]) -> Iterator[Tuple[Client, BaseMailBox]]:
     for client in clients:
         try:
             lookup = (normcase_email(client.account) + "_password").upper()
