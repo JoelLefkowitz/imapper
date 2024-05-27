@@ -8,7 +8,7 @@ IMAP message sweeper.
 ![Quality](https://img.shields.io/codacy/grade/73cf87cd8b854ae1b38440ac9d356dca)
 ![Coverage](https://img.shields.io/codacy/coverage/73cf87cd8b854ae1b38440ac9d356dca)
 
-## Installation
+## Installing
 
 ```bash
 pip install imapper
